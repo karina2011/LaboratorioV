@@ -1,9 +1,6 @@
 package clases;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -21,11 +18,15 @@ public class GoToEvent {
         return eventos;
     }
 
-    public List<Event> getOrdenar (){
+    public List<Event> getOrdenarId (){
         eventos.sort(comparingInt(Event::getId));
         return eventos;
     }
 
+    public List<Event> getOrdenarAlfa(){
+        Collections.sort(eventos, (Event e1,Event e2)->{return e1.getName().compareToIgnoreCase(e2.getName());});
+        return eventos;
+    }
 
     public void add(Event unEvento) {
 

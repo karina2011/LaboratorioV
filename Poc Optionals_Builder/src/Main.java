@@ -29,7 +29,7 @@ public class Main {
         eventos.listEvent();
 
         System.out.println("\nLos eventos ordenados por id");
-        eventos.getOrdenar();
+        eventos.getOrdenarId();
         eventos.listEvent();
 
         System.out.println("\nlos primeros cinco eventos");
@@ -39,6 +39,8 @@ public class Main {
         System.out.println("\nun evento por id");
         System.out.println(eventos.eventForId(1));
 
-
+        System.out.println("\nLos eventos ordenados alfabeticamente");
+        eventos.getOrdenarAlfa();
+        eventos.listEvent();
     }
 }
