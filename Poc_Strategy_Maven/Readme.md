@@ -69,22 +69,27 @@ pulsar al botón de compilar y se genera un compilado en nuestro caso un jar o a
   
   VALIDATE : Simplemente comprueba que el proyecto tiene la estructura correcta y los ficheros están donde tienen que estar . Ok a 
 nivel práctico hace poca cosa.
+
   COMPILE : Nos compila el código, este es fácil de entender , eso si nosotros compilamos el código primero pasará la por la fase de 
 validate.
+
   TEST: Se encarga de pasar las pruebas unitarias , algo que siempre debiéramos tener por lo tanto es otra fase importante y que 
 Maven de  alguna forma refuerza.
+
   PACKEGE: Recordemos que una cosa es compilar nuestro código y generar los ficheros .class y otra cosa muy diferente es generar 
 un empaquetado que se pueda “reutilizar” . Recordemos el concepto de código reutilizable
 
   CODIGO------compilacion------->COMPILADO(CLASESS)-----packege------->PACKEGE 
   
   Compilar no es lo mismo que empaquetar . Aunque a veces las herramientas lo simplifican tanto que lo parece.
+  
   install: La realidad es que la gente nos va a solicitar el empaquetado y el código fuente . El código fuente es necesario nos le 
 van a solicitar siempre. Así que de alguna forma necesitamos instalar nuestro artefacto de maven en un repositorio de Maven. Eso es 
 lo que se hace en la fase de install.
   A partir de este momento tenemos instalado nuestro Maven artifact en un repositorio para su posterior utilización este repositorio 
 se encuentra en la famosa carpeta .m2. Si queremos que nuestro artefacto pueda ser utilizado por otros developers necesitaremos 
 realizar maven deploy esto nos lo instalará en un repositorio Maven remoto al que otros usuarios podrán acceder (Nexus o Artifactory).
+
   Clean: se usa cuando desea eliminar los archivos generados en el momento de la compilación en el directorio de un proyecto.
 
 
