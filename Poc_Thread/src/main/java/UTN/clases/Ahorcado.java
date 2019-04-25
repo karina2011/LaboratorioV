@@ -1,16 +1,13 @@
 package UTN.clases;
 
 
-import UTN.Daos.GanadoresDao;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class Ahorcado {
     private Palabra palabra;
     private boolean juegoOcupado;
-
-    List<Character> abecedario;
+    private List<Character> abecedario;
 
     /**
      * Construvtor de la clase Ahorcado que crea la palabra, genera el abecedario e inicializa una variable boolean

@@ -8,9 +8,9 @@ import java.util.Date;
 public class Jugador implements Runnable {
     static final int CANT_VIDAS = 15;
     static boolean gano=Boolean.FALSE;
-    int cantVidas;
-    String nombre;
-    Ahorcado ahorcado;
+    private int cantVidas;
+    private String nombre;
+    private Ahorcado ahorcado;
     private final int TIEMPOESPERA = 1500;
     private Ganador ganador;
     private GanadoresDao ganadorDao;

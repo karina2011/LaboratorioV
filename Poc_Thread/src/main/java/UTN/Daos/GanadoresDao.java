@@ -9,7 +9,7 @@ import java.sql.Statement;
 
 
 public class GanadoresDao implements ICrud<Ganador> {
-    Conexion conn;
+    private Conexion conn;
 
 
     public GanadoresDao() {

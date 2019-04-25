@@ -3,9 +3,9 @@ package UTN.clases;
 import UTN.Daos.PalabraDao;
 
 public class Palabra {
-    String palabra;
-    char[] palabraChar;
-    PalabraDao palabraDao;
+    private String palabra;
+    private char[] palabraChar;
+    private PalabraDao palabraDao;
     private final int TIEMPOESPERA = 1500;
 
     /**
